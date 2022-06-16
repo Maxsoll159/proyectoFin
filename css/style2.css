@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+h1, a, h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+.banner{
+    background-image: url(../img/tesla3.jpeg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+}
+.pr-6{
+    padding-right: 50px !important;
+}
+a:hover{
+    background-color: #7D8288;
+    border-radius: 10px;
+}
+
+.margintopc{
+    margin-top: 10% !important;
+}
+
+.boton{
+    background:transparent;
+    margin-left: 1%;
+    border: white solid 2px;
+    color: white;
+    border-radius: 50px;
+    width: 230px;
+    height: 40px;
+}
+.boton:hover{
+    background-color: white;
+    color: black;
+}
+
+.arrow
+{
+  position: relative;
+  bottom: -2rem;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/chevron-down-solid.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.magin-botones{
+    margin-top: 37% !important;
+}
+@media only screen and (max-width: 576px)   {
+    .banner{
+        background: url("../img/tesla3Reponse.jpg") !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .magin-botones{
+        margin-top: 80% !important;
+    }
+    .nav{
+        display: none;
+    }
+    .menuLogo{
+        display: block !important;
+        margin-right: 20px !important;
+    }
+    .navComple{
+        display: none !important;
+    }
+    .boton{
+        margin-top: 30px !important;
+    }
+    .margintopc{
+        margin-top: 25% !important;
+    }
+}
